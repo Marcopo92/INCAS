@@ -17,11 +17,18 @@
     <div class="container">
       <a href="index.html" class="navbar-logo">Casa <span>Mia</span> B&B</a>
       <ul class="navbar-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="camere.html">Camere</a></li>
-        <li><a href="prenotazioni.html">Prenota</a></li>
-        <li><a href="chi-siamo.html">Chi Siamo</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="camere.html" data-i18n="nav.rooms">Camere</a></li>
+        <li><a href="prenotazioni.html" data-i18n="nav.book">Prenota</a></li>
+        <li><a href="chi-siamo.html" data-i18n="nav.about">Chi Siamo</a></li>
+        <li><a href="contatti.html" data-i18n="nav.contact">Contatti</a></li>
+        <li class="lang-switcher">
+          <button class="lang-btn active" data-lang="it">IT</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="pl">PL</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="de">DE</button>
+        </li>
       </ul>
       <div class="hamburger">
         <span></span>
@@ -35,8 +42,8 @@
   <!-- Page Header -->
   <section class="page-header">
     <div class="container">
-      <h1>Contattaci</h1>
-      <p>Siamo qui per rispondere a ogni tua domanda. Non esitare a scriverci!</p>
+      <h1 data-i18n="page.contact.title">Contattaci</h1>
+      <p data-i18n="page.contact.subtitle">Siamo qui per rispondere a ogni tua domanda. Non esitare a scriverci!</p>
     </div>
   </section>
 
@@ -45,48 +52,48 @@
     <div class="container">
       <div class="contact-grid animate-on-scroll">
         <div>
-          <h2 style="margin-bottom: 32px;">Come trovarci</h2>
+          <h2 style="margin-bottom: 32px;" data-i18n="contact.find.title">Come trovarci</h2>
           <div class="contact-info-list">
             <div class="contact-info-item">
               <div class="contact-info-icon">&#9906;</div>
               <div>
-                <h4>Indirizzo</h4>
+                <h4 data-i18n="contact.address.title">Indirizzo</h4>
                 <p>Via Gorizia<br>70122 Bari (BA), Italia</p>
               </div>
             </div>
             <div class="contact-info-item">
               <div class="contact-info-icon">&#9742;</div>
               <div>
-                <h4>Telefono</h4>
+                <h4 data-i18n="contact.phone.title">Telefono</h4>
                 <p>+39 080 123 4567<br>+39 333 987 6543 (WhatsApp)</p>
               </div>
             </div>
             <div class="contact-info-item">
               <div class="contact-info-icon">&#9993;</div>
               <div>
-                <h4>Email</h4>
+                <h4 data-i18n="contact.email.title">Email</h4>
                 <p>info@casamiabb.it<br>prenotazioni@casamiabb.it</p>
               </div>
             </div>
             <div class="contact-info-item">
               <div class="contact-info-icon">&#9200;</div>
               <div>
-                <h4>Orari</h4>
+                <h4 data-i18n="contact.hours.title">Orari</h4>
                 <table class="hours-table">
                   <tr>
-                    <td>Check-in</td>
+                    <td data-i18n="contact.hours.checkin">Check-in</td>
                     <td>14:00 - 20:00</td>
                   </tr>
                   <tr>
-                    <td>Check-out</td>
-                    <td>Entro le 10:30</td>
+                    <td data-i18n="contact.hours.checkout">Check-out</td>
+                    <td data-i18n="contact.hours.checkout.val">Entro le 10:30</td>
                   </tr>
                   <tr>
-                    <td>Reception</td>
+                    <td data-i18n="contact.hours.reception">Reception</td>
                     <td>8:00 - 22:00</td>
                   </tr>
                   <tr>
-                    <td>Colazione</td>
+                    <td data-i18n="contact.hours.breakfast">Colazione</td>
                     <td>7:30 - 10:00</td>
                   </tr>
                 </table>
@@ -111,47 +118,47 @@
   <section class="section section-light">
     <div class="container">
       <div class="section-title animate-on-scroll">
-        <h2>Scrivici un messaggio</h2>
-        <p>Hai una domanda o una richiesta particolare? Compila il modulo e ti risponderemo al più presto.</p>
+        <h2 data-i18n="contact.form.title">Scrivici un messaggio</h2>
+        <p data-i18n="contact.form.subtitle">Hai una domanda o una richiesta particolare? Compila il modulo e ti risponderemo al più presto.</p>
         <div class="divider"></div>
       </div>
       <div class="form-container animate-on-scroll">
         <form id="contact-form" novalidate>
           <div class="form-row">
             <div class="form-group">
-              <label for="contact-nome">Nome e Cognome *</label>
-              <input type="text" id="contact-nome" name="nome" required placeholder="es. Mario Rossi">
+              <label for="contact-nome" data-i18n="form.name">Nome e Cognome *</label>
+              <input type="text" id="contact-nome" name="nome" required placeholder="es. Mario Rossi" data-i18n-placeholder="form.name.placeholder">
               <div class="error-message"></div>
             </div>
             <div class="form-group">
-              <label for="contact-email">Email *</label>
-              <input type="email" id="contact-email" name="email" required placeholder="es. mario@email.com">
+              <label for="contact-email" data-i18n="form.email">Email *</label>
+              <input type="email" id="contact-email" name="email" required placeholder="es. mario@email.com" data-i18n-placeholder="form.email.placeholder">
               <div class="error-message"></div>
             </div>
           </div>
 
           <div class="form-group">
-            <label for="contact-oggetto">Oggetto *</label>
-            <input type="text" id="contact-oggetto" name="oggetto" required placeholder="es. Informazioni sulla disponibilità">
+            <label for="contact-oggetto" data-i18n="contact.form.subject">Oggetto *</label>
+            <input type="text" id="contact-oggetto" name="oggetto" required placeholder="es. Informazioni sulla disponibilità" data-i18n-placeholder="contact.form.subject.placeholder">
             <div class="error-message"></div>
           </div>
 
           <div class="form-group">
-            <label for="contact-messaggio">Messaggio *</label>
-            <textarea id="contact-messaggio" name="messaggio" required placeholder="Scrivi qui il tuo messaggio..."></textarea>
+            <label for="contact-messaggio" data-i18n="contact.form.message">Messaggio *</label>
+            <textarea id="contact-messaggio" name="messaggio" required placeholder="Scrivi qui il tuo messaggio..." data-i18n-placeholder="contact.form.message.placeholder"></textarea>
             <div class="error-message"></div>
           </div>
 
           <div class="form-submit">
-            <button type="submit" class="btn btn-primary">Invia Messaggio</button>
+            <button type="submit" class="btn btn-primary" data-i18n="form.submit.message">Invia Messaggio</button>
           </div>
         </form>
 
         <div id="contact-success" class="success-message">
           <div class="success-icon">&#10003;</div>
-          <h3>Messaggio inviato!</h3>
-          <p>Grazie per averci contattato. Ti risponderemo il prima possibile, solitamente entro 24 ore.</p>
-          <a href="index.html" class="btn btn-secondary" style="margin-top: 20px;">Torna alla Home</a>
+          <h3 data-i18n="form.success.contact.title">Messaggio inviato!</h3>
+          <p data-i18n="form.success.contact.text">Grazie per averci contattato. Ti risponderemo il prima possibile, solitamente entro 24 ore.</p>
+          <a href="index.html" class="btn btn-secondary" style="margin-top: 20px;" data-i18n="form.back.home">Torna alla Home</a>
         </div>
       </div>
     </div>
@@ -163,7 +170,7 @@
       <div class="footer-grid">
         <div class="footer-about">
           <h4>Casa Mia B&B</h4>
-          <p>Un angolo di paradiso nel cuore di Bari, dove il tempo si ferma e ogni ospite diventa famiglia.</p>
+          <p data-i18n="footer.about">Un angolo di paradiso nel cuore di Bari, dove il tempo si ferma e ogni ospite diventa famiglia.</p>
           <div class="footer-social">
             <a href="#" aria-label="Facebook">Fb</a>
             <a href="#" aria-label="Instagram">Ig</a>
@@ -171,26 +178,26 @@
           </div>
         </div>
         <div>
-          <h4>Link utili</h4>
+          <h4 data-i18n="footer.links">Link utili</h4>
           <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="camere.html">Camere</a>
-            <a href="prenotazioni.html">Prenota</a>
-            <a href="chi-siamo.html">Chi Siamo</a>
-            <a href="contatti.html">Contatti</a>
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="camere.html" data-i18n="nav.rooms">Camere</a>
+            <a href="prenotazioni.html" data-i18n="nav.book">Prenota</a>
+            <a href="chi-siamo.html" data-i18n="nav.about">Chi Siamo</a>
+            <a href="contatti.html" data-i18n="nav.contact">Contatti</a>
           </div>
         </div>
         <div>
-          <h4>Contatti</h4>
+          <h4 data-i18n="footer.contact">Contatti</h4>
           <div class="footer-contact-item">Via Gorizia - 70122 Bari (BA)</div>
           <div class="footer-contact-item">+39 080 123 4567</div>
           <div class="footer-contact-item">info@casamiabb.it</div>
         </div>
         <div>
-          <h4>Orari</h4>
-          <div class="footer-contact-item">Check-in: 14:00 - 20:00</div>
-          <div class="footer-contact-item">Check-out: entro le 10:30</div>
-          <div class="footer-contact-item">Reception: 8:00 - 22:00</div>
+          <h4 data-i18n="footer.hours">Orari</h4>
+          <div class="footer-contact-item" data-i18n="footer.checkin">Check-in: 14:00 - 20:00</div>
+          <div class="footer-contact-item" data-i18n="footer.checkout">Check-out: entro le 10:30</div>
+          <div class="footer-contact-item" data-i18n="footer.reception">Reception: 8:00 - 22:00</div>
         </div>
       </div>
       <div class="footer-bottom">
@@ -199,6 +206,7 @@
     </div>
   </footer>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

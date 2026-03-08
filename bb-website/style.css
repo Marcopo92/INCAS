@@ -137,6 +137,43 @@ ul {
   color: var(--brown);
 }
 
+/* Language Switcher */
+.lang-switcher {
+  display: flex;
+  gap: 4px;
+  margin-left: 16px;
+  padding-left: 16px;
+  border-left: 1px solid var(--beige-dark);
+}
+
+.lang-btn {
+  width: 32px;
+  height: 22px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  background: var(--beige);
+  color: var(--text-light);
+  transition: all var(--transition);
+  padding: 0;
+  line-height: 22px;
+  text-align: center;
+}
+
+.lang-btn:hover {
+  background: var(--brown-accent);
+  color: var(--white);
+}
+
+.lang-btn.active {
+  background: var(--brown);
+  color: var(--white);
+}
+
 /* Hamburger */
 .hamburger {
   display: none;
@@ -905,6 +942,15 @@ ul {
 
   .navbar-menu.open {
     right: 0;
+  }
+
+  .lang-switcher {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+    padding-top: 16px;
+    border-top: 1px solid var(--beige-dark);
+    justify-content: center;
   }
 
   .hero h1 {

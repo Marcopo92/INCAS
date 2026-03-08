@@ -17,11 +17,18 @@
     <div class="container">
       <a href="index.html" class="navbar-logo">Casa <span>Mia</span> B&B</a>
       <ul class="navbar-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="camere.html">Camere</a></li>
-        <li><a href="prenotazioni.html">Prenota</a></li>
-        <li><a href="chi-siamo.html">Chi Siamo</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="camere.html" data-i18n="nav.rooms">Camere</a></li>
+        <li><a href="prenotazioni.html" data-i18n="nav.book">Prenota</a></li>
+        <li><a href="chi-siamo.html" data-i18n="nav.about">Chi Siamo</a></li>
+        <li><a href="contatti.html" data-i18n="nav.contact">Contatti</a></li>
+        <li class="lang-switcher">
+          <button class="lang-btn active" data-lang="it">IT</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="pl">PL</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="de">DE</button>
+        </li>
       </ul>
       <div class="hamburger">
         <span></span>
@@ -36,9 +43,9 @@
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
-      <h1>Benvenuti a Casa Mia</h1>
-      <p>Un angolo di pace e autenticità nel cuore di Bari. Scopri il calore dell'ospitalità pugliese in un ambiente elegante e familiare.</p>
-      <a href="prenotazioni.html" class="btn btn-white">Prenota il tuo soggiorno</a>
+      <h1 data-i18n="hero.title">Benvenuti a Casa Mia</h1>
+      <p data-i18n="hero.subtitle">Un angolo di pace e autenticità nel cuore di Bari. Scopri il calore dell'ospitalità pugliese in un ambiente elegante e familiare.</p>
+      <a href="prenotazioni.html" class="btn btn-white" data-i18n="hero.cta">Prenota il tuo soggiorno</a>
     </div>
   </section>
 
@@ -46,19 +53,19 @@
   <section class="section">
     <div class="container">
       <div class="section-title animate-on-scroll">
-        <h2>Il tuo rifugio perfetto</h2>
-        <p>Situato in una posizione incantevole, Casa Mia B&B offre un'esperienza unica fatta di comfort, tradizione e calore umano.</p>
+        <h2 data-i18n="intro.title">Il tuo rifugio perfetto</h2>
+        <p data-i18n="intro.subtitle">Situato in una posizione incantevole, Casa Mia B&B offre un'esperienza unica fatta di comfort, tradizione e calore umano.</p>
         <div class="divider"></div>
       </div>
       <div class="about-grid animate-on-scroll">
         <div class="about-image">
-          <div class="img-placeholder">Casa Mia B&B</div>
+          <div class="img-placeholder" data-i18n="img.intro">Bari Vecchia al tramonto</div>
         </div>
         <div class="about-text">
-          <h2>Un'esperienza indimenticabile</h2>
-          <p>Nel cuore di Bari, Casa Mia B&B ti accoglie con il profumo del pane appena sfornato e il calore di un sorriso sincero. Claudio Posa vi aspetta per farvi vivere un'esperienza autentica pugliese.</p>
-          <p>Le nostre due camere, ciascuna pensata per ospitare fino a 4 persone, sono arredate con gusto e attenzione ai dettagli. Ogni mattina vi aspetta una colazione ricca e genuina, preparata con ingredienti locali e tanto amore.</p>
-          <a href="chi-siamo.html" class="btn btn-secondary">Scopri la nostra storia</a>
+          <h2 data-i18n="intro.experience.title">Un'esperienza indimenticabile</h2>
+          <p data-i18n="intro.experience.p1">Nel cuore di Bari, Casa Mia B&B ti accoglie con il profumo del pane appena sfornato e il calore di un sorriso sincero. Claudio Posa vi aspetta per farvi vivere un'esperienza autentica pugliese.</p>
+          <p data-i18n="intro.experience.p2">Le nostre due camere, ciascuna pensata per ospitare fino a 4 persone, sono arredate con gusto e attenzione ai dettagli. Ogni mattina vi aspetta una colazione ricca e genuina, preparata con ingredienti locali e tanto amore.</p>
+          <a href="chi-siamo.html" class="btn btn-secondary" data-i18n="intro.experience.cta">Scopri la nostra storia</a>
         </div>
       </div>
     </div>
@@ -68,36 +75,36 @@
   <section class="section section-light">
     <div class="container">
       <div class="section-title animate-on-scroll">
-        <h2>Le nostre camere</h2>
-        <p>Ogni camera è un piccolo mondo di comfort e bellezza, pensato per farti sentire a casa.</p>
+        <h2 data-i18n="rooms.title">Le nostre camere</h2>
+        <p data-i18n="rooms.subtitle">Ogni camera è un piccolo mondo di comfort e bellezza, pensato per farti sentire a casa.</p>
         <div class="divider"></div>
       </div>
       <div class="rooms-grid">
         <div class="room-card animate-on-scroll">
           <div class="room-card-img">
-            <div class="img-placeholder">Camera Puglia</div>
-            <span class="room-card-badge">Fino a 4 ospiti</span>
+            <div class="img-placeholder" data-i18n="img.puglia">Vista sul porto di Bari</div>
+            <span class="room-card-badge" data-i18n="rooms.badge">Fino a 4 ospiti</span>
           </div>
           <div class="room-card-body">
-            <h3>Camera Puglia</h3>
-            <p>Ampia e luminosa, arredata con cura in stile mediterraneo. Dotata di letto matrimoniale e due letti singoli, perfetta per famiglie e gruppi fino a 4 persone.</p>
+            <h3 data-i18n="rooms.puglia.name">Camera Puglia</h3>
+            <p data-i18n="rooms.puglia.desc">Ampia e luminosa, arredata con cura in stile mediterraneo. Dotata di letto matrimoniale e due letti singoli, perfetta per famiglie e gruppi fino a 4 persone.</p>
             <div class="room-card-footer">
               <span class="room-price">€85 <small>/notte</small></span>
-              <a href="prenotazioni.html" class="btn btn-primary">Prenota</a>
+              <a href="prenotazioni.html" class="btn btn-primary" data-i18n="rooms.book">Prenota</a>
             </div>
           </div>
         </div>
         <div class="room-card animate-on-scroll">
           <div class="room-card-img">
-            <div class="img-placeholder">Camera Adriatico</div>
-            <span class="room-card-badge">Fino a 4 ospiti</span>
+            <div class="img-placeholder" data-i18n="img.adriatico">Il mare Adriatico da Bari</div>
+            <span class="room-card-badge" data-i18n="rooms.badge">Fino a 4 ospiti</span>
           </div>
           <div class="room-card-body">
-            <h3>Camera Adriatico</h3>
-            <p>Calda e accogliente, con tonalità ispirate al mare. Spaziosa e confortevole, ospita fino a 4 persone con letto matrimoniale e due letti singoli.</p>
+            <h3 data-i18n="rooms.adriatico.name">Camera Adriatico</h3>
+            <p data-i18n="rooms.adriatico.desc">Calda e accogliente, con tonalità ispirate al mare. Spaziosa e confortevole, ospita fino a 4 persone con letto matrimoniale e due letti singoli.</p>
             <div class="room-card-footer">
               <span class="room-price">€90 <small>/notte</small></span>
-              <a href="prenotazioni.html" class="btn btn-primary">Prenota</a>
+              <a href="prenotazioni.html" class="btn btn-primary" data-i18n="rooms.book">Prenota</a>
             </div>
           </div>
         </div>
@@ -109,15 +116,15 @@
   <section class="section">
     <div class="container">
       <div class="section-title animate-on-scroll">
-        <h2>Cosa dicono i nostri ospiti</h2>
-        <p>Le parole di chi ha vissuto l'esperienza Casa Mia parlano più di qualsiasi descrizione.</p>
+        <h2 data-i18n="reviews.title">Cosa dicono i nostri ospiti</h2>
+        <p data-i18n="reviews.subtitle">Le parole di chi ha vissuto l'esperienza Casa Mia parlano più di qualsiasi descrizione.</p>
         <div class="divider"></div>
       </div>
       <div class="reviews-grid">
         <div class="review-card animate-on-scroll">
           <span class="quote">"</span>
           <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>Un posto magico! L'accoglienza di Claudio è stata straordinaria. La colazione con i prodotti del territorio pugliese è un'esperienza imperdibile. Torneremo sicuramente!</p>
+          <p data-i18n="reviews.1">Un posto magico! L'accoglienza di Claudio è stata straordinaria. La colazione con i prodotti del territorio pugliese è un'esperienza imperdibile. Torneremo sicuramente!</p>
           <div class="review-author">
             <div class="review-avatar">LR</div>
             <div class="review-author-info">
@@ -129,7 +136,7 @@
         <div class="review-card animate-on-scroll">
           <span class="quote">"</span>
           <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>Abbiamo trascorso un weekend indimenticabile. La camera era impeccabile, la vista mozzafiato e i proprietari sono persone di una gentilezza rara.</p>
+          <p data-i18n="reviews.2">Abbiamo trascorso un weekend indimenticabile. La camera era impeccabile, la vista mozzafiato e i proprietari sono persone di una gentilezza rara.</p>
           <div class="review-author">
             <div class="review-avatar">FB</div>
             <div class="review-author-info">
@@ -141,7 +148,7 @@
         <div class="review-card animate-on-scroll">
           <span class="quote">"</span>
           <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>A hidden gem! Beautiful rooms, amazing breakfast and the most welcoming host. We felt like family. Highly recommended for anyone visiting Bari and Puglia.</p>
+          <p data-i18n="reviews.3">A hidden gem! Beautiful rooms, amazing breakfast and the most welcoming host. We felt like family. Highly recommended for anyone visiting Bari and Puglia.</p>
           <div class="review-author">
             <div class="review-avatar">SM</div>
             <div class="review-author-info">
@@ -157,9 +164,9 @@
   <!-- CTA -->
   <section class="cta-section">
     <div class="container">
-      <h2>Pronto per la tua prossima fuga?</h2>
-      <p>Prenota ora e lasciati coccolare dall'ospitalità di Casa Mia.</p>
-      <a href="prenotazioni.html" class="btn btn-white">Prenota ora</a>
+      <h2 data-i18n="cta.title">Pronto per la tua prossima fuga?</h2>
+      <p data-i18n="cta.subtitle">Prenota ora e lasciati coccolare dall'ospitalità di Casa Mia.</p>
+      <a href="prenotazioni.html" class="btn btn-white" data-i18n="cta.button">Prenota ora</a>
     </div>
   </section>
 
@@ -169,7 +176,7 @@
       <div class="footer-grid">
         <div class="footer-about">
           <h4>Casa Mia B&B</h4>
-          <p>Un angolo di paradiso nel cuore di Bari, dove il tempo si ferma e ogni ospite diventa famiglia.</p>
+          <p data-i18n="footer.about">Un angolo di paradiso nel cuore di Bari, dove il tempo si ferma e ogni ospite diventa famiglia.</p>
           <div class="footer-social">
             <a href="#" aria-label="Facebook">Fb</a>
             <a href="#" aria-label="Instagram">Ig</a>
@@ -177,26 +184,26 @@
           </div>
         </div>
         <div>
-          <h4>Link utili</h4>
+          <h4 data-i18n="footer.links">Link utili</h4>
           <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="camere.html">Camere</a>
-            <a href="prenotazioni.html">Prenota</a>
-            <a href="chi-siamo.html">Chi Siamo</a>
-            <a href="contatti.html">Contatti</a>
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="camere.html" data-i18n="nav.rooms">Camere</a>
+            <a href="prenotazioni.html" data-i18n="nav.book">Prenota</a>
+            <a href="chi-siamo.html" data-i18n="nav.about">Chi Siamo</a>
+            <a href="contatti.html" data-i18n="nav.contact">Contatti</a>
           </div>
         </div>
         <div>
-          <h4>Contatti</h4>
+          <h4 data-i18n="footer.contact">Contatti</h4>
           <div class="footer-contact-item">Via Gorizia - 70122 Bari (BA)</div>
           <div class="footer-contact-item">+39 080 123 4567</div>
           <div class="footer-contact-item">info@casamiabb.it</div>
         </div>
         <div>
-          <h4>Orari</h4>
-          <div class="footer-contact-item">Check-in: 14:00 - 20:00</div>
-          <div class="footer-contact-item">Check-out: entro le 10:30</div>
-          <div class="footer-contact-item">Reception: 8:00 - 22:00</div>
+          <h4 data-i18n="footer.hours">Orari</h4>
+          <div class="footer-contact-item" data-i18n="footer.checkin">Check-in: 14:00 - 20:00</div>
+          <div class="footer-contact-item" data-i18n="footer.checkout">Check-out: entro le 10:30</div>
+          <div class="footer-contact-item" data-i18n="footer.reception">Reception: 8:00 - 22:00</div>
         </div>
       </div>
       <div class="footer-bottom">
@@ -205,6 +212,7 @@
     </div>
   </footer>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

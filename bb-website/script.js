@@ -4,10 +4,56 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  // --- Language Switcher ---
+  var currentLang = localStorage.getItem('casamia-lang') || 'it';
+
+  function applyTranslations(lang) {
+    currentLang = lang;
+    localStorage.setItem('casamia-lang', lang);
+    document.documentElement.setAttribute('lang', lang);
+
+    // Update all elements with data-i18n
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][lang]) {
+        el.innerHTML = translations[key][lang];
+      }
+    });
+
+    // Update placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][lang]) {
+        el.setAttribute('placeholder', translations[key][lang]);
+      }
+    });
+
+    // Update active language button
+    document.querySelectorAll('.lang-btn').forEach(function (btn) {
+      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+  }
+
+  // Language buttons
+  document.querySelectorAll('.lang-btn').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var lang = this.getAttribute('data-lang');
+      applyTranslations(lang);
+      // Close mobile menu if open
+      closeMenu();
+    });
+  });
+
+  // Apply saved language on load
+  if (typeof translations !== 'undefined') {
+    applyTranslations(currentLang);
+  }
+
   // --- Mobile Menu ---
-  const hamburger = document.querySelector('.hamburger');
-  const navMenu = document.querySelector('.navbar-menu');
-  const overlay = document.querySelector('.menu-overlay');
+  var hamburger = document.querySelector('.hamburger');
+  var navMenu = document.querySelector('.navbar-menu');
+  var overlay = document.querySelector('.menu-overlay');
 
   function toggleMenu() {
     hamburger.classList.toggle('active');
@@ -17,9 +63,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function closeMenu() {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('open');
-    overlay.classList.remove('active');
+    if (hamburger) hamburger.classList.remove('active');
+    if (navMenu) navMenu.classList.remove('open');
+    if (overlay) overlay.classList.remove('active');
     document.body.style.overflow = '';
   }
 
@@ -31,17 +77,16 @@ document.addEventListener('DOMContentLoaded', function () {
     overlay.addEventListener('click', closeMenu);
   }
 
-  // Close menu on link click
-  document.querySelectorAll('.navbar-menu a').forEach(function (link) {
+  // Close menu on nav link click
+  document.querySelectorAll('.navbar-menu a[href]').forEach(function (link) {
     link.addEventListener('click', closeMenu);
   });
 
   // --- Scroll Animations ---
-  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+  var animatedElements = document.querySelectorAll('.animate-on-scroll');
 
   function checkVisibility() {
     var triggerBottom = window.innerHeight * 0.85;
-
     animatedElements.forEach(function (el) {
       var box = el.getBoundingClientRect();
       if (box.top < triggerBottom) {
@@ -52,12 +97,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (animatedElements.length > 0) {
     window.addEventListener('scroll', checkVisibility);
-    checkVisibility(); // check on load
+    checkVisibility();
   }
 
   // --- Active nav link highlight ---
   var currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.navbar-menu a').forEach(function (link) {
+  document.querySelectorAll('.navbar-menu a[href]').forEach(function (link) {
     var href = link.getAttribute('href');
     if (href === currentPage) {
       link.classList.add('active');
@@ -65,17 +110,22 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // --- Form Validation ---
+  function getValidationMsg(key) {
+    if (typeof translations !== 'undefined' && translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return '';
+  }
+
   function setupFormValidation(formId, successId) {
     var form = document.getElementById(formId);
     var success = document.getElementById(successId);
-
     if (!form) return;
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var isValid = true;
 
-      // Clear previous errors
       form.querySelectorAll('.error').forEach(function (el) {
         el.classList.remove('error');
       });
@@ -83,20 +133,18 @@ document.addEventListener('DOMContentLoaded', function () {
         el.classList.remove('visible');
       });
 
-      // Validate required fields
       form.querySelectorAll('[required]').forEach(function (field) {
         if (!field.value.trim()) {
           isValid = false;
           field.classList.add('error');
           var msg = field.parentElement.querySelector('.error-message');
           if (msg) {
-            msg.textContent = 'Questo campo è obbligatorio';
+            msg.textContent = getValidationMsg('validation.required');
             msg.classList.add('visible');
           }
           return;
         }
 
-        // Email validation
         if (field.type === 'email') {
           var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
           if (!emailRegex.test(field.value)) {
@@ -104,13 +152,12 @@ document.addEventListener('DOMContentLoaded', function () {
             field.classList.add('error');
             var msg = field.parentElement.querySelector('.error-message');
             if (msg) {
-              msg.textContent = 'Inserisci un indirizzo email valido';
+              msg.textContent = getValidationMsg('validation.email');
               msg.classList.add('visible');
             }
           }
         }
 
-        // Phone validation
         if (field.type === 'tel' && field.value.trim()) {
           var phoneRegex = /^[+]?[\d\s()-]{7,}$/;
           if (!phoneRegex.test(field.value)) {
@@ -118,14 +165,13 @@ document.addEventListener('DOMContentLoaded', function () {
             field.classList.add('error');
             var msg = field.parentElement.querySelector('.error-message');
             if (msg) {
-              msg.textContent = 'Inserisci un numero di telefono valido';
+              msg.textContent = getValidationMsg('validation.phone');
               msg.classList.add('visible');
             }
           }
         }
       });
 
-      // Date validation for booking form
       var checkin = form.querySelector('#checkin');
       var checkout = form.querySelector('#checkout');
 
@@ -140,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
           checkin.classList.add('error');
           var msg = checkin.parentElement.querySelector('.error-message');
           if (msg) {
-            msg.textContent = 'La data di check-in non può essere nel passato';
+            msg.textContent = getValidationMsg('validation.checkin.past');
             msg.classList.add('visible');
           }
         }
@@ -150,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
           checkout.classList.add('error');
           var msg = checkout.parentElement.querySelector('.error-message');
           if (msg) {
-            msg.textContent = 'Il check-out deve essere dopo il check-in';
+            msg.textContent = getValidationMsg('validation.checkout.before');
             msg.classList.add('visible');
           }
         }
@@ -165,7 +211,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Initialize form validations
   setupFormValidation('booking-form', 'booking-success');
   setupFormValidation('contact-form', 'contact-success');
 

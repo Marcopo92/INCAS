@@ -17,11 +17,18 @@
     <div class="container">
       <a href="index.html" class="navbar-logo">Casa <span>Mia</span> B&B</a>
       <ul class="navbar-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="camere.html">Camere</a></li>
-        <li><a href="prenotazioni.html">Prenota</a></li>
-        <li><a href="chi-siamo.html">Chi Siamo</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="camere.html" data-i18n="nav.rooms">Camere</a></li>
+        <li><a href="prenotazioni.html" data-i18n="nav.book">Prenota</a></li>
+        <li><a href="chi-siamo.html" data-i18n="nav.about">Chi Siamo</a></li>
+        <li><a href="contatti.html" data-i18n="nav.contact">Contatti</a></li>
+        <li class="lang-switcher">
+          <button class="lang-btn active" data-lang="it">IT</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="pl">PL</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="de">DE</button>
+        </li>
       </ul>
       <div class="hamburger">
         <span></span>
@@ -35,8 +42,8 @@
   <!-- Page Header -->
   <section class="page-header">
     <div class="container">
-      <h1>Chi Siamo</h1>
-      <p>La nostra storia, i nostri volti e la passione che mettiamo in ogni giorno.</p>
+      <h1 data-i18n="page.about.title">Chi Siamo</h1>
+      <p data-i18n="page.about.subtitle">La nostra storia, i nostri volti e la passione che mettiamo in ogni giorno.</p>
     </div>
   </section>
 
@@ -45,13 +52,13 @@
     <div class="container">
       <div class="about-grid animate-on-scroll">
         <div class="about-image">
-          <div class="img-placeholder">La nostra casa</div>
+          <div class="img-placeholder" data-i18n="img.about">Cattedrale di San Sabino</div>
         </div>
         <div class="about-text">
-          <h2>La nostra storia</h2>
-          <p>Casa Mia nasce da un sogno di Claudio Posa: trasformare la propria casa nel cuore di Bari, in Via Gorizia, in un luogo dove ogni ospite potesse sentirsi davvero a casa.</p>
-          <p>Con due camere spaziose da 4 posti ciascuna, arredate con cura e attenzione ai dettagli, la struttura ha aperto le sue porte ai primi viaggiatori, che subito sono diventati amici.</p>
-          <p>Oggi Casa Mia B&B continua a essere un punto di riferimento per chi cerca un'ospitalità autentica a Bari, fatta di attenzione ai dettagli, sapori pugliesi genuini e sorrisi sinceri.</p>
+          <h2 data-i18n="about.story.title">La nostra storia</h2>
+          <p data-i18n="about.story.p1">Casa Mia nasce da un sogno di Claudio Posa: trasformare la propria casa nel cuore di Bari, in Via Gorizia, in un luogo dove ogni ospite potesse sentirsi davvero a casa.</p>
+          <p data-i18n="about.story.p2">Con due camere spaziose da 4 posti ciascuna, arredate con cura e attenzione ai dettagli, la struttura ha aperto le sue porte ai primi viaggiatori, che subito sono diventati amici.</p>
+          <p data-i18n="about.story.p3">Oggi Casa Mia B&B continua a essere un punto di riferimento per chi cerca un'ospitalità autentica a Bari, fatta di attenzione ai dettagli, sapori pugliesi genuini e sorrisi sinceri.</p>
         </div>
       </div>
     </div>
@@ -61,8 +68,8 @@
   <section class="section section-light">
     <div class="container">
       <div class="section-title animate-on-scroll">
-        <h2>I volti di Casa Mia</h2>
-        <p>Dietro ogni soggiorno memorabile ci sono persone appassionate e dedicate.</p>
+        <h2 data-i18n="about.team.title">I volti di Casa Mia</h2>
+        <p data-i18n="about.team.subtitle">Dietro ogni soggiorno memorabile ci sono persone appassionate e dedicate.</p>
         <div class="divider"></div>
       </div>
       <div class="team-grid" style="max-width: 400px; margin: 0 auto;">
@@ -71,8 +78,8 @@
             <div class="img-placeholder" style="font-size: 0.8rem;">Claudio</div>
           </div>
           <h3>Claudio Posa</h3>
-          <div class="role">Proprietario e Host</div>
-          <p>Appassionato di ospitalità e innamorato della sua Bari, Claudio accoglie ogni ospite con il calore tipico pugliese. Conosce ogni angolo della città e sa consigliare i migliori ristoranti, le spiagge più belle e gli itinerari perfetti per ogni tipo di viaggiatore.</p>
+          <div class="role" data-i18n="about.claudio.role">Proprietario e Host</div>
+          <p data-i18n="about.claudio.bio">Appassionato di ospitalità e innamorato della sua Bari, Claudio accoglie ogni ospite con il calore tipico pugliese. Conosce ogni angolo della città e sa consigliare i migliori ristoranti, le spiagge più belle e gli itinerari perfetti per ogni tipo di viaggiatore.</p>
         </div>
       </div>
     </div>
@@ -82,30 +89,30 @@
   <section class="section">
     <div class="container">
       <div class="section-title animate-on-scroll">
-        <h2>I nostri valori</h2>
-        <p>Ogni scelta che facciamo è guidata da principi semplici ma profondi.</p>
+        <h2 data-i18n="about.values.title">I nostri valori</h2>
+        <p data-i18n="about.values.subtitle">Ogni scelta che facciamo è guidata da principi semplici ma profondi.</p>
         <div class="divider"></div>
       </div>
       <div class="values-grid">
         <div class="value-card animate-on-scroll">
           <div class="value-icon">&#9825;</div>
-          <h3>Ospitalità autentica</h3>
-          <p>Non siamo un hotel: siamo una famiglia che apre le porte della propria casa. Ogni ospite è unico e merita un'accoglienza speciale.</p>
+          <h3 data-i18n="about.value1.title">Ospitalità autentica</h3>
+          <p data-i18n="about.value1.desc">Non siamo un hotel: siamo una famiglia che apre le porte della propria casa. Ogni ospite è unico e merita un'accoglienza speciale.</p>
         </div>
         <div class="value-card animate-on-scroll">
           <div class="value-icon">&#9752;</div>
-          <h3>Sostenibilità</h3>
-          <p>Utilizziamo energia solare, prodotti biologici locali e riduciamo al minimo gli sprechi. La bellezza del territorio va preservata per le generazioni future.</p>
+          <h3 data-i18n="about.value2.title">Sostenibilità</h3>
+          <p data-i18n="about.value2.desc">Utilizziamo energia solare, prodotti biologici locali e riduciamo al minimo gli sprechi. La bellezza del territorio va preservata per le generazioni future.</p>
         </div>
         <div class="value-card animate-on-scroll">
           <div class="value-icon">&#9734;</div>
-          <h3>Eccellenza</h3>
-          <p>Dalla biancheria in cotone egiziano ai prodotti da bagno artigianali, ogni dettaglio è curato per offrire un'esperienza di qualità superiore.</p>
+          <h3 data-i18n="about.value3.title">Eccellenza</h3>
+          <p data-i18n="about.value3.desc">Dalla biancheria in cotone egiziano ai prodotti da bagno artigianali, ogni dettaglio è curato per offrire un'esperienza di qualità superiore.</p>
         </div>
         <div class="value-card animate-on-scroll">
           <div class="value-icon">&#9743;</div>
-          <h3>Tradizione</h3>
-          <p>Le ricette della nonna, i mobili restaurati a mano, le storie del territorio: manteniamo viva la tradizione pugliese in ogni aspetto.</p>
+          <h3 data-i18n="about.value4.title">Tradizione</h3>
+          <p data-i18n="about.value4.desc">Le ricette della nonna, i mobili restaurati a mano, le storie del territorio: manteniamo viva la tradizione pugliese in ogni aspetto.</p>
         </div>
       </div>
     </div>
@@ -114,9 +121,9 @@
   <!-- CTA -->
   <section class="cta-section">
     <div class="container">
-      <h2>Vieni a conoscerci di persona</h2>
-      <p>Prenota il tuo soggiorno e scopri perché i nostri ospiti tornano sempre.</p>
-      <a href="prenotazioni.html" class="btn btn-white">Prenota ora</a>
+      <h2 data-i18n="cta.about.title">Vieni a conoscerci di persona</h2>
+      <p data-i18n="cta.about.subtitle">Prenota il tuo soggiorno e scopri perché i nostri ospiti tornano sempre.</p>
+      <a href="prenotazioni.html" class="btn btn-white" data-i18n="cta.button">Prenota ora</a>
     </div>
   </section>
 
@@ -126,7 +133,7 @@
       <div class="footer-grid">
         <div class="footer-about">
           <h4>Casa Mia B&B</h4>
-          <p>Un angolo di paradiso nel cuore di Bari, dove il tempo si ferma e ogni ospite diventa famiglia.</p>
+          <p data-i18n="footer.about">Un angolo di paradiso nel cuore di Bari, dove il tempo si ferma e ogni ospite diventa famiglia.</p>
           <div class="footer-social">
             <a href="#" aria-label="Facebook">Fb</a>
             <a href="#" aria-label="Instagram">Ig</a>
@@ -134,26 +141,26 @@
           </div>
         </div>
         <div>
-          <h4>Link utili</h4>
+          <h4 data-i18n="footer.links">Link utili</h4>
           <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="camere.html">Camere</a>
-            <a href="prenotazioni.html">Prenota</a>
-            <a href="chi-siamo.html">Chi Siamo</a>
-            <a href="contatti.html">Contatti</a>
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="camere.html" data-i18n="nav.rooms">Camere</a>
+            <a href="prenotazioni.html" data-i18n="nav.book">Prenota</a>
+            <a href="chi-siamo.html" data-i18n="nav.about">Chi Siamo</a>
+            <a href="contatti.html" data-i18n="nav.contact">Contatti</a>
           </div>
         </div>
         <div>
-          <h4>Contatti</h4>
+          <h4 data-i18n="footer.contact">Contatti</h4>
           <div class="footer-contact-item">Via Gorizia - 70122 Bari (BA)</div>
           <div class="footer-contact-item">+39 080 123 4567</div>
           <div class="footer-contact-item">info@casamiabb.it</div>
         </div>
         <div>
-          <h4>Orari</h4>
-          <div class="footer-contact-item">Check-in: 14:00 - 20:00</div>
-          <div class="footer-contact-item">Check-out: entro le 10:30</div>
-          <div class="footer-contact-item">Reception: 8:00 - 22:00</div>
+          <h4 data-i18n="footer.hours">Orari</h4>
+          <div class="footer-contact-item" data-i18n="footer.checkin">Check-in: 14:00 - 20:00</div>
+          <div class="footer-contact-item" data-i18n="footer.checkout">Check-out: entro le 10:30</div>
+          <div class="footer-contact-item" data-i18n="footer.reception">Reception: 8:00 - 22:00</div>
         </div>
       </div>
       <div class="footer-bottom">
@@ -162,6 +169,7 @@
     </div>
   </footer>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
