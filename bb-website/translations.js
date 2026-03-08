@@ -1,5 +1,5 @@
 /* =============================================
-   Casa Mia B&B - Translations
+   INCAS B&B - Translations
    Languages: IT, EN, PL, RU, DE
    ============================================= */
 
@@ -24,11 +24,11 @@ var translations = {
 
   // --- Homepage Hero ---
   "hero.title": {
-    it: "Benvenuti a Casa Mia",
-    en: "Welcome to Casa Mia",
-    pl: "Witamy w Casa Mia",
-    ru: "Добро пожаловать в Casa Mia",
-    de: "Willkommen bei Casa Mia"
+    it: "Benvenuti a INCAS",
+    en: "Welcome to INCAS",
+    pl: "Witamy w INCAS",
+    ru: "Добро пожаловать в INCAS",
+    de: "Willkommen bei INCAS"
   },
   "hero.subtitle": {
     it: "Un angolo di pace e autenticità nel cuore di Bari. Scopri il calore dell'ospitalità pugliese in un ambiente elegante e familiare.",
@@ -54,11 +54,11 @@ var translations = {
     de: "Ihr perfekter Rückzugsort"
   },
   "intro.subtitle": {
-    it: "Situato in una posizione incantevole, Casa Mia B&B offre un'esperienza unica fatta di comfort, tradizione e calore umano.",
-    en: "Located in a charming position, Casa Mia B&B offers a unique experience of comfort, tradition and human warmth.",
-    pl: "Położony w urokliwym miejscu, Casa Mia B&B oferuje wyjątkowe doświadczenie komfortu, tradycji i ludzkiego ciepła.",
-    ru: "Расположенный в очаровательном месте, Casa Mia B&B предлагает уникальный опыт комфорта, традиций и человеческого тепла.",
-    de: "In einer bezaubernden Lage bietet das Casa Mia B&B ein einzigartiges Erlebnis aus Komfort, Tradition und menschlicher Wärme."
+    it: "Situato in una posizione incantevole, INCAS B&B offre un'esperienza unica fatta di comfort, tradizione e calore umano.",
+    en: "Located in a charming position, INCAS B&B offers a unique experience of comfort, tradition and human warmth.",
+    pl: "Położony w urokliwym miejscu, INCAS B&B oferuje wyjątkowe doświadczenie komfortu, tradycji i ludzkiego ciepła.",
+    ru: "Расположенный в очаровательном месте, INCAS B&B предлагает уникальный опыт комфорта, традиций и человеческого тепла.",
+    de: "In einer bezaubernden Lage bietet das INCAS B&B ein einzigartiges Erlebnis aus Komfort, Tradition und menschlicher Wärme."
   },
   "intro.experience.title": {
     it: "Un'esperienza indimenticabile",
@@ -68,11 +68,11 @@ var translations = {
     de: "Ein unvergessliches Erlebnis"
   },
   "intro.experience.p1": {
-    it: "Nel cuore di Bari, Casa Mia B&B ti accoglie con il profumo del pane appena sfornato e il calore di un sorriso sincero. Claudio Posa vi aspetta per farvi vivere un'esperienza autentica pugliese.",
-    en: "In the heart of Bari, Casa Mia B&B welcomes you with the aroma of freshly baked bread and the warmth of a genuine smile. Claudio Posa awaits you for an authentic Apulian experience.",
-    pl: "W sercu Bari, Casa Mia B&B wita Cię aromatem świeżo upieczonego chleba i ciepłem szczerego uśmiechu. Claudio Posa czeka na Ciebie z autentycznym apulijskim doświadczeniem.",
-    ru: "В самом сердце Бари Casa Mia B&B встречает вас ароматом свежеиспечённого хлеба и теплом искренней улыбки. Клаудио Поза ждёт вас для подлинного апулийского опыта.",
-    de: "Im Herzen von Bari empfängt Sie das Casa Mia B&B mit dem Duft frisch gebackenen Brotes und der Wärme eines aufrichtigen Lächelns. Claudio Posa erwartet Sie für ein authentisches apulisches Erlebnis."
+    it: "Nel cuore di Bari, INCAS B&B ti accoglie con il profumo del pane appena sfornato e il calore di un sorriso sincero. Claudio Posa vi aspetta per farvi vivere un'esperienza autentica pugliese.",
+    en: "In the heart of Bari, INCAS B&B welcomes you with the aroma of freshly baked bread and the warmth of a genuine smile. Claudio Posa awaits you for an authentic Apulian experience.",
+    pl: "W sercu Bari, INCAS B&B wita Cię aromatem świeżo upieczonego chleba i ciepłem szczerego uśmiechu. Claudio Posa czeka na Ciebie z autentycznym apulijskim doświadczeniem.",
+    ru: "В самом сердце Бари INCAS B&B встречает вас ароматом свежеиспечённого хлеба и теплом искренней улыбки. Клаудио Поза ждёт вас для подлинного апулийского опыта.",
+    de: "Im Herzen von Bari empfängt Sie das INCAS B&B mit dem Duft frisch gebackenen Brotes und der Wärme eines aufrichtigen Lächelns. Claudio Posa erwartet Sie für ein authentisches apulisches Erlebnis."
   },
   "intro.experience.p2": {
     it: "Le nostre due camere, ciascuna pensata per ospitare fino a 4 persone, sono arredate con gusto e attenzione ai dettagli. Ogni mattina vi aspetta una colazione ricca e genuina, preparata con ingredienti locali e tanto amore.",
@@ -172,11 +172,11 @@ var translations = {
     de: "Was unsere Gäste sagen"
   },
   "reviews.subtitle": {
-    it: "Le parole di chi ha vissuto l'esperienza Casa Mia parlano più di qualsiasi descrizione.",
-    en: "The words of those who lived the Casa Mia experience speak louder than any description.",
-    pl: "Słowa tych, którzy przeżyli doświadczenie Casa Mia, mówią więcej niż jakikolwiek opis.",
-    ru: "Слова тех, кто испытал опыт Casa Mia, говорят лучше любого описания.",
-    de: "Die Worte derjenigen, die das Casa Mia erlebt haben, sprechen mehr als jede Beschreibung."
+    it: "Le parole di chi ha vissuto l'esperienza INCAS parlano più di qualsiasi descrizione.",
+    en: "The words of those who lived the INCAS experience speak louder than any description.",
+    pl: "Słowa tych, którzy przeżyli doświadczenie INCAS, mówią więcej niż jakikolwiek opis.",
+    ru: "Слова тех, кто испытал опыт INCAS, говорят лучше любого описания.",
+    de: "Die Worte derjenigen, die das INCAS erlebt haben, sprechen mehr als jede Beschreibung."
   },
   "reviews.1": {
     it: "Un posto magico! L'accoglienza di Claudio è stata straordinaria. La colazione con i prodotti del territorio pugliese è un'esperienza imperdibile. Torneremo sicuramente!",
@@ -209,11 +209,11 @@ var translations = {
     de: "Bereit für Ihren nächsten Kurzurlaub?"
   },
   "cta.subtitle": {
-    it: "Prenota ora e lasciati coccolare dall'ospitalità di Casa Mia.",
-    en: "Book now and let yourself be pampered by Casa Mia's hospitality.",
-    pl: "Zarezerwuj teraz i daj się rozpieszczać gościnności Casa Mia.",
-    ru: "Забронируйте сейчас и позвольте себе насладиться гостеприимством Casa Mia.",
-    de: "Buchen Sie jetzt und lassen Sie sich von der Gastfreundschaft des Casa Mia verwöhnen."
+    it: "Prenota ora e lasciati coccolare dall'ospitalità di INCAS.",
+    en: "Book now and let yourself be pampered by INCAS's hospitality.",
+    pl: "Zarezerwuj teraz i daj się rozpieszczać gościnności INCAS.",
+    ru: "Забронируйте сейчас и позвольте себе насладиться гостеприимством INCAS.",
+    de: "Buchen Sie jetzt und lassen Sie sich von der Gastfreundschaft des INCAS verwöhnen."
   },
   "cta.button": {
     it: "Prenota ora", en: "Book now", pl: "Rezerwuj teraz", ru: "Забронировать", de: "Jetzt buchen"
@@ -301,11 +301,11 @@ var translations = {
     it: "La nostra storia", en: "Our story", pl: "Nasza historia", ru: "Наша история", de: "Unsere Geschichte"
   },
   "about.story.p1": {
-    it: "Casa Mia nasce da un sogno di Claudio Posa: trasformare la propria casa nel cuore di Bari, in Via Gorizia, in un luogo dove ogni ospite potesse sentirsi davvero a casa.",
-    en: "Casa Mia was born from a dream of Claudio Posa: to transform his home in the heart of Bari, on Via Gorizia, into a place where every guest could truly feel at home.",
-    pl: "Casa Mia narodziła się z marzenia Claudio Posy: przekształcenia swojego domu w sercu Bari, przy Via Gorizia, w miejsce, gdzie każdy gość może poczuć się naprawdę jak w domu.",
-    ru: "Casa Mia родилась из мечты Клаудио Поза: превратить свой дом в самом сердце Бари, на Виа Гориция, в место, где каждый гость мог бы по-настоящему чувствовать себя как дома.",
-    de: "Casa Mia entstand aus einem Traum von Claudio Posa: sein Haus im Herzen von Bari, in der Via Gorizia, in einen Ort zu verwandeln, an dem sich jeder Gast wirklich wie zu Hause fühlen kann."
+    it: "INCAS nasce da un sogno di Claudio Posa: trasformare la propria casa nel cuore di Bari, in Via Gorizia, in un luogo dove ogni ospite potesse sentirsi davvero a casa.",
+    en: "INCAS was born from a dream of Claudio Posa: to transform his home in the heart of Bari, on Via Gorizia, into a place where every guest could truly feel at home.",
+    pl: "INCAS narodziła się z marzenia Claudio Posy: przekształcenia swojego domu w sercu Bari, przy Via Gorizia, w miejsce, gdzie każdy gość może poczuć się naprawdę jak w domu.",
+    ru: "INCAS родилась из мечты Клаудио Поза: превратить свой дом в самом сердце Бари, на Виа Гориция, в место, где каждый гость мог бы по-настоящему чувствовать себя как дома.",
+    de: "INCAS entstand aus einem Traum von Claudio Posa: sein Haus im Herzen von Bari, in der Via Gorizia, in einen Ort zu verwandeln, an dem sich jeder Gast wirklich wie zu Hause fühlen kann."
   },
   "about.story.p2": {
     it: "Con due camere spaziose da 4 posti ciascuna, arredate con cura e attenzione ai dettagli, la struttura ha aperto le sue porte ai primi viaggiatori, che subito sono diventati amici.",
@@ -315,14 +315,14 @@ var translations = {
     de: "Mit zwei geräumigen Zimmern für jeweils 4 Gäste, liebevoll und detailreich eingerichtet, öffnete das Haus seine Türen für die ersten Reisenden, die sofort zu Freunden wurden."
   },
   "about.story.p3": {
-    it: "Oggi Casa Mia B&B continua a essere un punto di riferimento per chi cerca un'ospitalità autentica a Bari, fatta di attenzione ai dettagli, sapori pugliesi genuini e sorrisi sinceri.",
-    en: "Today Casa Mia B&B continues to be a reference point for those seeking authentic hospitality in Bari, made of attention to detail, genuine Apulian flavors and sincere smiles.",
-    pl: "Dziś Casa Mia B&B nadal jest punktem odniesienia dla tych, którzy szukają autentycznej gościnności w Bari, złożonej z dbałości o szczegóły, autentycznych apulijskich smaków i szczerych uśmiechów.",
-    ru: "Сегодня Casa Mia B&B продолжает быть ориентиром для тех, кто ищет подлинное гостеприимство в Бари — внимание к деталям, настоящие апулийские вкусы и искренние улыбки.",
-    de: "Heute ist das Casa Mia B&B weiterhin eine Referenz für alle, die authentische Gastfreundschaft in Bari suchen – mit Liebe zum Detail, echten apulischen Aromen und aufrichtigen Lächeln."
+    it: "Oggi INCAS B&B continua a essere un punto di riferimento per chi cerca un'ospitalità autentica a Bari, fatta di attenzione ai dettagli, sapori pugliesi genuini e sorrisi sinceri.",
+    en: "Today INCAS B&B continues to be a reference point for those seeking authentic hospitality in Bari, made of attention to detail, genuine Apulian flavors and sincere smiles.",
+    pl: "Dziś INCAS B&B nadal jest punktem odniesienia dla tych, którzy szukają autentycznej gościnności w Bari, złożonej z dbałości o szczegóły, autentycznych apulijskich smaków i szczerych uśmiechów.",
+    ru: "Сегодня INCAS B&B продолжает быть ориентиром для тех, кто ищет подлинное гостеприимство в Бари — внимание к деталям, настоящие апулийские вкусы и искренние улыбки.",
+    de: "Heute ist das INCAS B&B weiterhin eine Referenz für alle, die authentische Gastfreundschaft in Bari suchen – mit Liebe zum Detail, echten apulischen Aromen und aufrichtigen Lächeln."
   },
   "about.team.title": {
-    it: "I volti di Casa Mia", en: "The faces of Casa Mia", pl: "Twarze Casa Mia", ru: "Лица Casa Mia", de: "Die Gesichter von Casa Mia"
+    it: "I volti di INCAS", en: "The faces of INCAS", pl: "Twarze INCAS", ru: "Лица INCAS", de: "Die Gesichter von INCAS"
   },
   "about.team.subtitle": {
     it: "Dietro ogni soggiorno memorabile ci sono persone appassionate e dedicate.",
@@ -475,11 +475,11 @@ var translations = {
     it: "Prenotazione inviata!", en: "Booking sent!", pl: "Rezerwacja wysłana!", ru: "Бронирование отправлено!", de: "Buchung gesendet!"
   },
   "form.success.booking.text": {
-    it: "Grazie per aver scelto Casa Mia B&B. Ti invieremo una conferma via email entro 24 ore. Per qualsiasi urgenza, contattaci al <strong>+39 080 123 4567</strong>.",
-    en: "Thank you for choosing Casa Mia B&B. We will send you a confirmation email within 24 hours. For any urgency, contact us at <strong>+39 080 123 4567</strong>.",
-    pl: "Dziękujemy za wybór Casa Mia B&B. Wyślemy potwierdzenie mailem w ciągu 24 godzin. W pilnych sprawach skontaktuj się z nami pod numerem <strong>+39 080 123 4567</strong>.",
-    ru: "Спасибо за выбор Casa Mia B&B. Мы отправим подтверждение по электронной почте в течение 24 часов. По срочным вопросам звоните <strong>+39 080 123 4567</strong>.",
-    de: "Vielen Dank, dass Sie sich für Casa Mia B&B entschieden haben. Wir senden Ihnen innerhalb von 24 Stunden eine Bestätigung per E-Mail. Bei Dringlichkeit kontaktieren Sie uns unter <strong>+39 080 123 4567</strong>."
+    it: "Grazie per aver scelto INCAS B&B. Ti invieremo una conferma via email entro 24 ore. Per qualsiasi urgenza, contattaci al <strong>+39 080 123 4567</strong>.",
+    en: "Thank you for choosing INCAS B&B. We will send you a confirmation email within 24 hours. For any urgency, contact us at <strong>+39 080 123 4567</strong>.",
+    pl: "Dziękujemy za wybór INCAS B&B. Wyślemy potwierdzenie mailem w ciągu 24 godzin. W pilnych sprawach skontaktuj się z nami pod numerem <strong>+39 080 123 4567</strong>.",
+    ru: "Спасибо за выбор INCAS B&B. Мы отправим подтверждение по электронной почте в течение 24 часов. По срочным вопросам звоните <strong>+39 080 123 4567</strong>.",
+    de: "Vielen Dank, dass Sie sich für INCAS B&B entschieden haben. Wir senden Ihnen innerhalb von 24 Stunden eine Bestätigung per E-Mail. Bei Dringlichkeit kontaktieren Sie uns unter <strong>+39 080 123 4567</strong>."
   },
   "form.success.contact.title": {
     it: "Messaggio inviato!", en: "Message sent!", pl: "Wiadomość wysłana!", ru: "Сообщение отправлено!", de: "Nachricht gesendet!"

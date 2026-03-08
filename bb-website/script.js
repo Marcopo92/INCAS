@@ -1,15 +1,15 @@
 /* =============================================
-   Casa Mia B&B - JavaScript
+   INCAS B&B - JavaScript
    ============================================= */
 
 document.addEventListener('DOMContentLoaded', function () {
 
   // --- Language Switcher ---
-  var currentLang = localStorage.getItem('casamia-lang') || 'it';
+  var currentLang = localStorage.getItem('incas-lang') || 'it';
 
   function applyTranslations(lang) {
     currentLang = lang;
-    localStorage.setItem('casamia-lang', lang);
+    localStorage.setItem('incas-lang', lang);
     document.documentElement.setAttribute('lang', lang);
 
     // Update all elements with data-i18n
