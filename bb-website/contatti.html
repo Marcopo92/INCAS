@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti - Casa Mia B&B</title>
+  <meta name="description" content="Contatta Casa Mia B&B: indirizzo, telefono, email e mappa. Siamo sempre a disposizione per aiutarti.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-logo">Casa <span>Mia</span> B&B</a>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="camere.html">Camere</a></li>
+        <li><a href="prenotazioni.html">Prenota</a></li>
+        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+  <div class="menu-overlay"></div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Contattaci</h1>
+      <p>Siamo qui per rispondere a ogni tua domanda. Non esitare a scriverci!</p>
+    </div>
+  </section>
+
+  <!-- Contact Info + Map -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid animate-on-scroll">
+        <div>
+          <h2 style="margin-bottom: 32px;">Come trovarci</h2>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">&#9906;</div>
+              <div>
+                <h4>Indirizzo</h4>
+                <p>Via delle Rose, 15<br>53100 Siena (SI), Italia</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">&#9742;</div>
+              <div>
+                <h4>Telefono</h4>
+                <p>+39 0577 123 456<br>+39 333 987 6543 (WhatsApp)</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">&#9993;</div>
+              <div>
+                <h4>Email</h4>
+                <p>info@casamiabb.it<br>prenotazioni@casamiabb.it</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">&#9200;</div>
+              <div>
+                <h4>Orari</h4>
+                <table class="hours-table">
+                  <tr>
+                    <td>Check-in</td>
+                    <td>14:00 - 20:00</td>
+                  </tr>
+                  <tr>
+                    <td>Check-out</td>
+                    <td>Entro le 10:30</td>
+                  </tr>
+                  <tr>
+                    <td>Reception</td>
+                    <td>8:00 - 22:00</td>
+                  </tr>
+                  <tr>
+                    <td>Colazione</td>
+                    <td>7:30 - 10:00</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46301.94684574804!2d11.294736!3d43.318809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a2c5c81a6c5e7%3A0x61e4399ba9f20f6!2sSiena%20SI%2C%20Italy!5e0!3m2!1sit!2sus!4v1700000000000"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mappa Casa Mia B&B">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <h2>Scrivici un messaggio</h2>
+        <p>Hai una domanda o una richiesta particolare? Compila il modulo e ti risponderemo al più presto.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="form-container animate-on-scroll">
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-nome">Nome e Cognome *</label>
+              <input type="text" id="contact-nome" name="nome" required placeholder="es. Mario Rossi">
+              <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email *</label>
+              <input type="email" id="contact-email" name="email" required placeholder="es. mario@email.com">
+              <div class="error-message"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-oggetto">Oggetto *</label>
+            <input type="text" id="contact-oggetto" name="oggetto" required placeholder="es. Informazioni sulla disponibilità">
+            <div class="error-message"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-messaggio">Messaggio *</label>
+            <textarea id="contact-messaggio" name="messaggio" required placeholder="Scrivi qui il tuo messaggio..."></textarea>
+            <div class="error-message"></div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">Invia Messaggio</button>
+          </div>
+        </form>
+
+        <div id="contact-success" class="success-message">
+          <div class="success-icon">&#10003;</div>
+          <h3>Messaggio inviato!</h3>
+          <p>Grazie per averci contattato. Ti risponderemo il prima possibile, solitamente entro 24 ore.</p>
+          <a href="index.html" class="btn btn-secondary" style="margin-top: 20px;">Torna alla Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h4>Casa Mia B&B</h4>
+          <p>Un angolo di paradiso nel cuore della Toscana, dove il tempo si ferma e ogni ospite diventa famiglia.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="TripAdvisor">Ta</a>
+          </div>
+        </div>
+        <div>
+          <h4>Link utili</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="camere.html">Camere</a>
+            <a href="prenotazioni.html">Prenota</a>
+            <a href="chi-siamo.html">Chi Siamo</a>
+            <a href="contatti.html">Contatti</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contatti</h4>
+          <div class="footer-contact-item">Via delle Rose, 15 - 53100 Siena (SI)</div>
+          <div class="footer-contact-item">+39 0577 123 456</div>
+          <div class="footer-contact-item">info@casamiabb.it</div>
+        </div>
+        <div>
+          <h4>Orari</h4>
+          <div class="footer-contact-item">Check-in: 14:00 - 20:00</div>
+          <div class="footer-contact-item">Check-out: entro le 10:30</div>
+          <div class="footer-contact-item">Reception: 8:00 - 22:00</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Casa Mia B&B. Tutti i diritti riservati.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
