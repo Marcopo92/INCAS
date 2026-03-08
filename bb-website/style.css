@@ -1,7 +1,7 @@
 /* =============================================
    INCAS B&B - Stylesheet
-   Palette: beige (#F5F0E8), marrone (#6B4226),
-            bianco (#FFFFFF), accenti (#A67C52, #D4A574)
+   Palette: azzurro chiaro (#EBF5FB), blu mare (#1A5276),
+            bianco (#FFFFFF), accenti (#2980B9, #5DADE2)
    ============================================= */
 
 /* --- Reset & Base --- */
@@ -14,11 +14,11 @@
 }
 
 :root {
-  --beige: #F5F0E8;
-  --beige-dark: #E8DFD0;
-  --brown: #6B4226;
-  --brown-light: #A67C52;
-  --brown-accent: #D4A574;
+  --beige: #EBF5FB;
+  --beige-dark: #D4E6F1;
+  --brown: #1A5276;
+  --brown-light: #2980B9;
+  --brown-accent: #5DADE2;
   --white: #FFFFFF;
   --text: #3A3A3A;
   --text-light: #6E6E6E;
@@ -220,7 +220,7 @@ ul {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #6B4226 0%, #A67C52 50%, #D4A574 100%);
+  background: linear-gradient(135deg, #1A5276 0%, #2980B9 50%, #5DADE2 100%);
   z-index: -1;
 }
 
@@ -276,7 +276,7 @@ ul {
 .btn-primary:hover {
   background: var(--brown-light);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(107, 66, 38, 0.3);
+  box-shadow: 0 6px 20px rgba(26, 82, 118, 0.3);
 }
 
 .btn-secondary {
@@ -665,7 +665,7 @@ ul {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--brown-accent);
-  box-shadow: 0 0 0 3px rgba(166, 124, 82, 0.15);
+  box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.15);
 }
 
 .form-group input.error,
